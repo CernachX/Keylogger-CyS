@@ -2,7 +2,7 @@
 Keylogger with Discord Webhook Integration
 Utilizes many functions found in [winutils](https://github.com/CernachX/winutils-CyS).
 
-This Python script is a keylogger that captures keyboard input and sends the logged data to a Discord webhook. It also includes functionality to add itself to the Windows Registry for autorun on system startup. The script uses threading to periodically send logged keys to the webhook while continuously monitoring keyboard events.
+This Python script is a keylogger that captures keyboard input and sends the logged data to a Discord webhook. It also includes functionality to add itself to the Windows Registry for autorun on system startup. The script uses threading to periodically send logged keys to the webhook while continuously monitoring keyboard events. Compatible with pyinstaller, allowing this .py script to be compiled into a .exe file.
 
 Keylogging: Captures every key press using the pynput library. Logs the key press along with the username of the current user and a timestamp.
 Discord Webhook Integration: Sends the logged keys to a specified encoded Discord webhook URL every 5 seconds. Combines all logged keys into a single message before sending.
